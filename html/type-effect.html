@@ -1,0 +1,48 @@
+	<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .ityped-cursor {
+            font-size: 50px;
+            opacity: 1;
+            animation: blink 0.3s infinite alternate;
+        }
+
+        #element {
+            font-size: 50px;
+        }
+
+        @-webkit-keyframes blink {
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes blink {
+            100% {
+                opacity: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <span id="element"></span>
+    <script src='https://cdn.rawgit.com/luisvinicius167/ityped/f0b028ab/dist/ityped.min.js'></script>
+    <script id="rendered-js">
+        var options = {
+            strings: ['안녕하세요'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            startDelay: 500,
+            backDelay: 500,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|",
+            onFinished: function() {}
+        };
+        ityped.init('#element', options);
+    </script>
+</body></html>

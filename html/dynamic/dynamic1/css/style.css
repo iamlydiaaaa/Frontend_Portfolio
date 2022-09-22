@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Rubik|Dancing+Script|Lobster&display=swap');
+/*    Reset CSS  */
+* { margin:0;  padding:0; 
+    font-family: 'Rubik', sans-serif
+}
+ol,ul { list-style: none}
+a {outline:0; text-decoration:none; color:#bbb}
+img { border:0}
+em {font-style: normal}
+main {display: block}
+body {position:fixed;  width:100%; height:100%; background:#111}
+
+
+header{width: 800px; height: 100%; 
+    position: fixed; left: -550px;top: 0; z-index: 100;
+    background-color: #b54343;
+/*    background-color: #f0cac9;*/
+    transform: skewX(-40deg)
+}
+
+/*header*/
+header h1{width: 500px; height: 647px; opacity: 0.15;
+    position: absolute;left: 200px;top: -80px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    text-indent: -9999px;
+    transform: skewX(40deg)
+}
+header nav{
+    position: absolute; right: 0;top: 200px
+}
+#gnb>li{width: 180px;height: 50px;
+    position: relative
+}
+#gnb>li>a{display: block; width: 100%; height: 50px;
+    text-align: center;line-height: 50px; color: #fdf3b8; font-size: 18px; font-weight: bold; font-family: 'Dancing Script';
+    transition: all 0.5s
+}
+#gnb>li>a>em{display: inline-block;
+    transform: skewX(40deg)
+}
+#gnb ul{opacity: 0;
+    position: absolute; left: 0;top: 0;
+    transition: all 0.7s
+}
+#gnb ul li{width: 150px;height: 40px;
+    border-bottom: 1px solid #fdf3b8
+}
+#gnb ul li + li{margin-top: 5px}
+#gnb ul a{display: block;width: 100%; height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff; text-align: center; line-height: 40px;
+    transition: all 0.3s
+}
+#gnb ul em{display: inline-block; transform: skewX(40deg)}
+
+
+#gnb>li:hover a{color: #fff; background-color: #000}
+#gnb>li:hover ul{opacity: 1; left: 160px}
+#gnb ul li:hover a{background-color: #fdf3b8; color: #000}
+
+#gnb .on ul{opacity: 1; left: 160px;}
+#gnb .on a{color: #fff; background-color: #000}
+
+/*main*/
+main{width: 100%; height: 100%;
+    position: fixed; left: 0;top: 0
+}
+main figure{z-index: -100}
+main video{width: 100%; height: auto; z-index: -10;
+    position: fixed; left: 0;top: -20px
+}
+
+
+
+#sns{width: 200px; z-index: 100;
+    position: fixed; right: 20px;top: 20px
+}
+#sns li{width: 50px; height: 50px;float: left}
+#sns a{font-size: 30px; color: #fff;
+    transition: all 0.3s
+}
+#sns i{transform: scale(1); transition: all 0.3s}
+#sns a:hover{color: #feec75}
+#sns a:hover i{transform: scale(1.2)}
+
+
+
+.txtbox{position: fixed; right: 320px;bottom: 250px; opacity: 0.9;
+    color: #fff; text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    transition: all 2s
+}
+.txt{position: absolute; top: -30px; left: 0; opacity: 0.7;
+    font-family: 'Dancing Script', cursive; font-size: 35px
+}
+.txt b{font-family: 'Dancing Script', cursive; color: gold}
+
+.tit{font-size: 90px;font-family: 'Lobster', cursive; color: #f6DBAF}
+.txtbox:hover{opacity: 0.3;
+    transform: translateY(-10px)}
+
+
+#side{width: 800px;height: 100%;
+    position: fixed; right: -650px;top: 100px;
+    background-color: rgba(181,67,67,0.3);
+    transform: skewX(-40deg);
+    transition: all 0.5s
+}
+.con{width: 400px;height: 100%;
+    position: absolute; left: 150px;top: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.7s
+}
+.con p{width: 200px;height: 150px; opacity: 0;
+    position: absolute; left: 200px;bottom: 200px;
+    transition: all 0.7s
+}
+.con p:nth-child(1){bottom: 460px}
+.con p:nth-child(2){bottom: 330px; transition-delay: 0.1s}
+.con p:nth-child(3){transition-delay: 0.2s}
+.con em{display: block;
+    transform: skewX(40deg);
+    color: goldenrod; text-indent: -70px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    transition: all 0.9s
+}
+.con img{opacity: 0.5;
+    transition: all 0.9s;
+    transform: skewX(40deg) scale(1)
+}
+
+#side:hover{right: -400px}
+#side:hover .con{left: 60px}
+#side:hover .con p{opacity: 1; left: 50px}
+.con p:hover img{opacity: 1; transform: skewX(40deg) scale(1.05)}
+.con p:hover em{transform: skewX(40deg) translateY(-5px)}
+
+/*footer*/
+footer{width: 100%; height: 50px;
+    position: fixed; bottom: 10px;left: 0
+}
+footer img{display: block; margin: 0 auto; opacity: 0.7;
+    transition: all 0.3s
+}
+
+footer img:hover{opacity: 1}
+

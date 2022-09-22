@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--  <Jinkyeong Kim>, Project Checkpoint, COMPX161-20B -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <a class="logo" href="index.html">Peter Pan</a>
+        <ul class="navi">
+            <li><a href="about.html" class="about_btn">ABOUT</a></li>
+            <li><a href="table.html" class="table_btn">CHAPTERS</a></li>
+            <li class="navi_tit">MAP</li>
+        </ul>
+        <a href="#" class="top_btn">TOP</a>
+    </div>
+    <div class="container" id="map">
+        <h1 class="tit">Map of Neverland</h1>
+        <div class="content">
+            <h2 class="map_tit">Let's explore Neverland !</h2>
+            <div class="map_wrap">
+                <img src="img/neverlands.jpg" alt="neverland" usemap="#Map">
+                <map name="Map">
+                    <area id="indianCampMap" shape="rect" coords="27,205,148,364" alt="indian_camp" class="map_indian_camp" onclick="Area('indianCamp')">
+                    <area id="lostBoysMap" shape="rect" coords="230,180,375,310" alt="lost_boys" class="map_lost_boys" onclick="Area('lostBoys')">
+                    <area id="cannibalCoveMap" shape="rect" coords="175,420,315,520" alt="cannibal_cove" class="map_cannibal_cove" onclick="Area('cannibalCove')">
+                    <area id="mermaidLagoonMap" shape="rect" coords="365,330,505,435" alt="mermaid_lagoon" class="map_mermaid_lagoon" onclick="Area('mermaidLagoon')">
+                    <area id="crocodileCreekMap" shape="rect" coords="310,420,450,540" alt="crocodile_creek" class="map_crocodile_creek" onclick="Area('crocodileCreek')">
+                </map>
+                <ul id="mapTxt">
+                    <li id="indianCamp">
+                        <strong>"Indian Camp"</strong>
+                        <span>This is where Tiger Lily and her tribe are located. There are multiple tepees here, which serve as homes for the tribe.</span>
+                        <a class="map_move" href="chapters/ch05.html">Let's jump into this story!</a>
+                        <a id="Close" onclick="CloseButton()"></a>
+                    </li>
+                    <li id="lostBoys">
+                        <strong>"Lost Boys"</strong>
+                        <span>This area is where Peter Pan lives with his friends, lost boys. Lost boys are the children who fall out of their perambulators when the nurse is looking the other way.</span>
+                        <a id="Close" onclick="CloseButton()"></a>
+                        <a class="map_move" href="chapters/ch06.html">Let's jump into this story!</a>
+                    </li>
+                    <li id="cannibalCove">
+                        <strong>"Cannibal Cove"</strong>
+                        <span>This area is mentioned only when Captain Hook says he searched there in an attempt to find Peter's hideout. As its name would suggest, it is inhabited by cannibalistic jungle natives.</span>
+                        <a id="Close" onclick="CloseButton()"></a>
+                        <a class="map_move" href="chapters/ch14.html">Let's jump into this story!</a>
+                    </li>
+                    <li id="mermaidLagoon">
+                        <strong>"Mermaid Lagoon"</strong>
+                        <span>This is an mysterical area which is a favorite resting place of the legendary mermaids who live within the depths of the sea surrounding the island.</span>
+                        <a id="Close" onclick="CloseButton()"></a>
+                        <a class="map_move" href="chapters/ch08.html">Let's jump into this story!</a>
+                    </li>
+                    <li id="crocodileCreek">
+                        <strong>"Crocodile Creek"</strong>
+                        <span>The home of the crocodile who ate Captain Hook's left hand. It is also said to be the location of a hidden treasure. The very mention of Crocodile Creek makes Hook very nervous.</span>
+                        <a id="Close" onclick="CloseButton()"></a>
+                        <a class="map_move" href="chapters/ch15.html">Let's jump into this story!</a>
+                    </li>
+                </ul>
+                <p id="placehorder"></p>
+            </div>
+        </div>
+        <p id="copyright">Webpage published by_Jinkyeong Kim</p>
+    </div>
+    <p class="coverbg"></p>
+</body></html>

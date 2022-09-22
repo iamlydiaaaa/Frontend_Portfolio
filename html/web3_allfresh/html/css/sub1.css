@@ -1,0 +1,272 @@
+@charset "utf-8";
+.sub1{font-family: 'Arita-buri-SemiBold'; color: #fff; text-shadow: rgba(0,0,0,0.1) 0 0 6px;
+    background-image: url(../img/sub/bg-dark.jpg);
+}
+/*텍스트 공통*/
+.sub1>article h1{margin-bottom: 40px; opacity: 0.9;
+    font-size: 36px; line-height: 40px
+}
+.sub1>article p{opacity: 0.7;
+    font: 14px 'Noto Sans KR'; line-height: 30px; font-weight: 300
+}
+/*텍스트 공통 끝*/
+
+.sub1>article{width: 100%;min-width: 1200px; padding-top: 80px;margin-bottom: 80px;
+    position: relative
+}
+
+/*첫번째*/
+.sub1 .submain{height: 1100px; padding-top: 250px;overflow: hidden;
+    text-align: center; color: #fff; 
+/*    transition: all 0.5s*/
+}
+.sub1 .submain>div{position: relative; z-index: 10;}
+.sub1 .submain img{width: 172px;height: 172px; margin: 0 auto;}
+.sub1 .submain h1{padding: 24px 30px;
+    font-size:72px; font-weight: 700; letter-spacing: 5px;line-height: 72px
+}
+.sub1 .submain h2{margin-bottom: 40px;
+    font-size: 36px 
+}
+.sub1 .submain h3{opacity: 0.8;
+    font: 16px 'Noto Sans KR'; font-weight: 100;}
+.sub1 .submain a{position: absolute; left: 50%; bottom: -150px;
+    font-size: 20px;
+    animation: float 1.5s ease infinite
+}
+.sub1 .submain a:before{content: ""; display: block;
+    position: absolute; left: 5px;top: -20px;
+    width: 2px; height: 35px;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.1) 0 0 6px
+}
+.sub1 .submain p{ width: 100%; height: 100%;
+    position: fixed; left: 0;top: 0;
+    background: url(../img/sub/sub-bg.jpg) no-repeat center center
+}
+
+
+/*두번째*/
+.subintro{ text-align: center;}
+.subintro img{margin-bottom: 30px;}
+.subintro h1:after{content: ""; width: 250px;height: 1px; display: block; margin: 40px auto 0;
+    background-color: #fff;
+}
+.subintro h2{padding: 10px 0 15px;
+    font-size: 20px;
+}
+
+/*세번째*/
+.onepercent{}
+.onepercent>div{width: 1200px; margin: 0 auto;padding: 0 40px;
+    position: relative;
+}
+.one-left{width: 400px; display: inline-block; margin-right: 150px;}
+.one-left h1{padding-top: 100px; margin-bottom: 40px;}
+.one-left p{margin-bottom: 50px;}
+.one-left a{width: 400px;height: 400px; display: block;
+    position: relative;
+    background: url(../img/sub/ab-img-02.jpg) no-repeat center center;
+}
+.one-left a:after{content: ""; display: block; width: 297px;height: 271px;
+    position: absolute; left: 0;top: -50px;
+    background: url(../img/sub/leaf-02.png) no-repeat 0 0
+}
+.onepercent span{float: right;width: 600px;height: 500px;
+    position: absolute; right: 0;top: 0;
+    background: url(../img/sub/ab-img-01.jpg) no-repeat center center;
+    background-size: cover
+}
+.onepercent span:after{content: ""; display: block; width: 369px;height: 197px;
+    position: absolute; right: 0px;top: 30px;
+    background: url(../img/sub/leaf-01.png) no-repeat 0 0
+}
+
+/*네번째*/
+.value{text-align: center;}
+.value h1{}
+.value p{margin-bottom: 20px}
+.value ul{width: 700px;height: 50px; margin: 0 auto 40px;
+    border-top: 1px solid rgba(255,255,255,0.5)
+}
+.value li{display: inline-block; margin: 0 20px;
+    line-height: 50px;
+    border-top: 3px solid transparent;
+    transition: all 0.3s
+}
+.value li a{width: 100%; display: block;  opacity: 0.5;}
+
+.value li:hover{opacity: 1;
+    border-top: 3px solid #dd5808}
+
+.value li:hover a{opacity: 1}
+
+.value>div{width: 1000px;height: 500px; margin: 0 auto;
+    position: relative;
+}
+.value>div>div{width: 1000px;height: 500px; margin: 0 auto; padding: 100px 0;
+    position: absolute; left: 0;top: 0;
+}
+.image1{background: url(../img/sub/ba-01.jpg) no-repeat center center}
+.image2{background: url(../img/sub/ba-02.jpg) no-repeat center center}
+.image3{background: url(../img/sub/ba-03.jpg) no-repeat center center}
+.image4{background: url(../img/sub/ba-04.jpg) no-repeat center center}
+
+.value dl{width: 500px;height: 300px; margin: 0 auto; padding: 80px 0;
+    background-color: rgba(255,255,255,0.9);
+    transition: all 0.8s
+}
+.value dt{width: 45px;height: 45px;display: block; margin: 0 auto;
+    background: url(../img/sub/icon1.png) no-repeat 0 0
+}
+.value dd{margin: 20px auto; 
+    font-size: 18px; text-align: center; color: #555;
+}
+.value strong{display: block; margin-top: 10px;
+    font-size: 24px; color: #222
+}
+
+
+/*다섯번째*/
+.honest{width: 100%; min-width: 1200px; height: 650px;margin: 0 auto;
+    position: relative
+}
+.honest>div{width: 1200px; margin: 0 auto;}
+.honest h1{padding-top: 100px; margin-bottom: 40px;}
+.honest p{margin-bottom: 50px;}
+.honest a{width: 160px; margin: 0;
+    color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.honest span{width: 930px;height: 450px;display: block;
+    position: absolute; right: 0;top: 50px;
+    background: url(../img/sub/ab-img-03.jpg) no-repeat 0 0;
+}
+.honest span:after{content: ""; display: block; width: 297px;height: 271px;
+    position: absolute; left: 350px;top: 80px;
+    background: url(../img/sub/leaf-02.png) no-repeat 0 0
+}
+
+
+@media screen and (min-width:300px) and (max-width:1199px){
+    .sub1>article{min-width: 300px;
+    }
+    .sub1>article h1{
+        font-size: 18px; line-height: 20px; margin-bottom: 20px;
+    }
+    .sub1>article p{
+        font: 13px 'Noto Sans KR'; line-height: 25px
+    }
+
+    /*세번째*/
+    .onepercent{}
+    .onepercent>div{width: 690px; padding: 0 15px 200px;}
+    .one-left{width: 100%;}
+    .one-left h1{padding-top: 0;}
+    .one-left p{}
+    .one-left a{width: 300px;height: 300px}
+    .onepercent span{width: 400px;height: 400px;
+        top: 400px;}
+    .onepercent span:after{width: 100px;height: 100px;}
+}
+
+@media screen and (min-width:300px) and (max-width:1000px){
+    .sub1 .submain{min-width: 300px; height: 600px; margin: 0 auto; padding-top: 150px;}
+    .sub1 .submain img{width: 100px;height: 100px}
+    .sub1 .submain h1{padding: 24px 20px; font-size:30px;line-height: 30px}
+    .sub1 .submain h2{margin-bottom: 20px; font-size: 18px}
+    .sub1 .submain h3{font-size: 12px}
+    .sub1 .submain a{display: none;}
+    .sub1 .submain a:before{display: none}
+    .sub1 .submain p{min-width: 300px; height: 600px;padding-top: 50px;
+        position: absolute;
+        background-size: cover
+    }
+}
+
+
+@media screen and (min-width:730px) and (max-width:1199px){
+    .sub1>article{min-width: 730px;
+    }
+/*    네번째 730px까지*/
+    .value{text-align: center;}
+    .value h1{}
+    .value p{}
+    .value ul{    }
+    .value li{}
+    .value li a{}
+    .value>div{width: 100%; min-width: 730px; height: 400px; }
+    .value>div>div{width: 100%; min-width: 730px; height: 400px; padding: 50px 0;}
+    
+    .value dl{}
+    .value dt{}
+    .value dd{font-size: 14px}
+    .value strong{font-size: 18px}
+    
+    /*다섯번째 770까지*/
+    .honest{width: 100%; min-width: 730px; height: 450px;
+        position: relative
+    }
+    .honest>div{width: 690px; margin: 0 auto;}
+    .honest h1{padding-top: 0; margin-bottom: 40px;}
+    .honest p{margin-bottom: 50px;}
+    .honest a{}
+    .honest span{width: 400px;height: 350px;
+        bottom: 0;
+        background-size: contain
+    }
+    .honest span:after{display: none;}  
+}
+
+@media screen and (min-width:100px) and (max-width:729px){
+    .onepercent{}
+    .onepercent>div{width: 100%; min-width: 300px; padding-bottom: 200px;}
+    .one-left{}
+    .one-left h1{}
+    .one-left p{}
+    .one-left a{width: 300px;height: 300px}
+    .onepercent span{width: 400px;height: 400px;
+        position: absolute; right: 0;bottom: 0;}
+    .onepercent span:after{width: 100px;height: 100px;}
+/*    네번째 730px까지*/
+    .value{text-align: center;}
+    .value h1{}
+    .value p{}
+    .value ul{width: 100%; min-width: 300px;}
+    .value li{}
+    .value li a{font-size: 13px}
+    .value>div{width: 100%; min-width: 300px; height: 400px; }
+    .value>div>div{width: 100%; min-width: 300px; height: 400px; padding: 50px 0;}
+    
+    .value dl{width: 340px;height: 260px; margin: 0 auto; padding: 50px 0}
+    .value dt{}
+    .value dd{font-size: 14px}
+    .value strong{font-size: 18px}
+    
+    /*다섯번째 770까지*/
+    .honest{min-width: 300px;height: 900px;
+    }
+    .honest>div{width: 100%; min-width: 300px; padding: 0 15px}
+    .honest h1{padding-top: 0; margin-bottom: 40px;}
+    .honest p{margin-bottom: 50px;}
+    .honest a{margin-bottom: 40px;}
+    .honest span{width: 100%; height: 100%; min-width: 300px;display: block;
+        position: relative;
+        background-size: contain
+    }
+    .honest span:after{display: none;}  
+}
+@media screen and (min-width:500px) and (max-width:690px){
+    
+}
+
+
+
+
+
+
+
+
+
+

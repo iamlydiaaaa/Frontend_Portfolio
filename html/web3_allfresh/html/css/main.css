@@ -1,0 +1,403 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,600,700&display=swap');
+
+/*visual - S*/
+#visual{width: 100%;min-width: 1200px; height: 978px;
+    position: relative;
+    
+}
+.images .img{width: 100%; min-width: 1200px; height: 978px; margin: 0 auto; z-index: -10;
+    background-position: center center; background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative
+}
+.images .img p{
+    position: absolute;
+    background-size: contain; background-repeat: no-repeat; background-position: center
+}
+.images .img a{background-size: contain; background-repeat: no-repeat; background-position: center}
+.images .image1{
+    background: url(../img/images_1.jpg)
+}
+.image1 p{width: 148px;height: 581px; margin-left: -74px;
+    background: url(../img/main-txt4.png);
+    left: 50%; top: 250px;
+}
+.image1 a{width: 100%; height: 581px;display: block
+    
+}
+
+.images .image2{background: url(../img/images_2.jpg)}
+.image2 p{width: 488px;height: 338px;margin: -169px 0 0 -244px;
+    background: url(../img/main-txt2.png);
+    left: 50%; top: 50%;
+}
+.image2 a{margin-left: -60px;
+    position: absolute; left: 50%; bottom: 200px
+}
+
+.images .image3{background: url(../img/images_3.jpg)}
+.image3 p{width: 434px;height: 170px;
+    background: url(../img/main-txt5.png);
+    left: 20%; top: 380px
+}
+.image3 a{width: 433px;height: 27px;
+    background: url(../img/main-txt5-btn.png);
+    position: absolute; left: 20%;top: 590px;}
+
+.images .image4{background: url(../img/images_4.jpg)}
+.image4 p{width: 259px;height: 495px;margin: -248px 0 0 -130px;
+    background: url(../img/main-txt.png);
+    left: 50%; top: 50%
+}
+.image4 a{margin-left: -60px;
+    position: absolute; left: 50%; bottom: 200px
+}
+#visual .discover{border-top: 0;}
+
+
+#visual .v-btn a{opacity: 0.4}
+#visual .v-btn a:hover{opacity: 0.8}
+
+/*main S*/
+
+/*텍스트 공통*/
+.txt{text-align: center;}
+.txt h1{margin-bottom: 10px;
+    font-size: 24px; font-weight: bold; line-height: 32px;font-family: 'Arita-buri-SemiBold',"돋움", Dotum, AppleGothic, sans-serif
+}
+.txt p{color: #666;line-height: 28px;}
+
+.product .txt, .promotion .txt, .story .txt{opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s}
+/*첫번째 섹션*/
+.product{width: 100%;height: 800px;}
+.product>article{width: 50%;height: 800px; float: left;}
+.pro{padding: 50px;
+    position: relative;
+    background-color: #f7f7f7
+}
+.pro-wrap{width: 100%;height: 100%;}
+.pro-wrap .pro-img{width: 450px;height: 450px;display: block;margin: 40px auto 0; opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s}
+.pro .v-btn{transition: all 0.4s}
+.pro .v-btn a{opacity: 0}
+.pro .v-inde a{background-color: #fcbf63;}
+.pro .v-inde a:nth-child(1){background-color: #f90;}
+.pro:hover .v-btn a{opacity: 0.4}
+.pro .v-btn a:hover{opacity: 0.8}
+
+.everyday{padding: 7% 10%;
+    background: url(../img/box-bg.jpg) no-repeat center 0;
+    background-size: cover
+}
+.everyday div{width: 100%; height: 100%; margin: 0 auto; padding: 25% 0;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+}
+.everyday h1{margin-bottom: 50px;
+    font-size: 30px;line-height: 36px;
+}
+.everyday p{margin-bottom: 60px}
+.everyday strong{display: block; font-weight: 500}
+
+/*두번째 섹션*/
+.promotion{width: 100%; height: 460px; padding: 100px 0}
+.promotion>article{width: 50%; float: left; margin: 0 auto}
+.promotion .txt{float: left; width: 30%; margin: 0 10%; padding: 30px 0}
+.promotion h1{margin-bottom: 20px}
+.promotion p{margin-bottom: 30px}
+.promotion img{float: left; width: 40%}
+.thisweek{position: relative}
+.thisweek:after{content: ""; display: block; width: 1px;height: 260px;
+    position: absolute; right: 0;top: 0;
+    background-color: #eee
+}
+
+/*세번째 섹션*/
+.story{width: 100%; height: 800px;}
+.story>article{width: 50%; height: 100%;float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+.story-brand{position: relative;
+    background-image: url(../img/bg-area-01.jpg)
+}
+.story-class{background-image: url(../img/bg-area-02.jpg)}
+.story .txt{padding: 30% 0}
+.story .txt h1{margin-bottom: 40px;
+    font-size: 30px; color: #fff; letter-spacing: 5px;
+}
+.story .txt p{margin-bottom: 60px;
+    color: #fff;
+}
+.story a{color: #fff;
+    border-color: #fff}
+.story a:hover{color: #fff;}
+
+/*네번째 섹션*/
+.pick{width: 1200px;margin: 0 auto;}
+.pick .txt{margin: 120px 0 60px}
+.pick .txt h1{margin-bottom: 20px;
+    font-size: 30px
+}
+.pick .txt p{margin-bottom: 20px;}
+
+.pick ul{width: 100%}
+
+.pick li{width: calc(100% / 3); float: left; height: 680px;
+    transition: all 0.5s
+}
+.pick li:nth-child(3n-2){padding: 135px 25px 10px}
+.pick li:nth-child(3n-1){padding: 6px 25px 160px}
+.pick li:nth-child(3n){padding: 85px 25px 80px}
+.pick li>a{display: block; width: 100%;
+    position: relative
+}
+.pick li .pick-img{width: 100%;
+    background-size: cover}
+.pick li .pick-icon{width: 60px;height: 60px; margin: 10px 0 0 10px;
+    position: absolute; top: 0;
+    background-size: cover
+}
+.pick li .pick-icon:nth-child(2){left: 0;}
+.pick li .pick-icon:nth-child(3){left: 70px;}
+
+.pick li>h1{margin: 10px 0;
+    font-family: 'Arita-buri-SemiBold',"돋움", Dotum, AppleGothic, sans-serif
+}
+.pick li>h1>a{font-size: 17px; line-height: 24px;}
+.pick li>p{margin-bottom: 15px; padding-right: 40px;
+    font-size: 13px; color: #999;
+}
+.pick li span{font-size: 13px; line-height: 20px;font-family: 'Arita-buri-SemiBold',"돋움", Dotum, AppleGothic, sans-serif}
+.pick li strong{font-size: 18px; font-weight: bold;}
+.pick li>a:hover{opacity: 0.5}
+.pick li:hover{transform: translateY(-15px)}
+
+
+
+
+
+@media screen and (min-width:765px) and (max-width:1199px) {
+
+    /*visual - S*/
+    #visual{min-width: 765px; height: 880px}
+    .images .img{min-width:765px; height: 880px;
+        background-size: cover;
+        background-position: -350px center
+
+    }
+
+
+    /*main S*/
+    /*첫번째 섹션*/
+    .product{width: 100%;min-width: 765px;height: 500px}
+    .product>article{height: 500px}
+    .pro-wrap .pro-img{width: 200px;height: 200px}
+    .product h1{font-size: 16px; line-height: 16px}
+    .product p{font-size: 12px; line-height: 20px}
+    .everyday{padding: 7% 5%}
+    .everyday div{width: 100%; height: 100%; margin: 0 auto; padding: 10% 0}
+
+    /*두번째 섹션*/
+
+    /*세번째 섹션*/
+    .story{height: 500px}
+    .story .txt{padding: 25% 0}
+    .story .txt h1{font-size: 16px}
+    .story .txt p{font-size: 12px; line-height: 22px}
+    
+    .pick{width: 100%;min-width: 765px}
+}
+
+@media screen and (min-width:765px) and (max-width:1100px){
+    .pick{width: 100%;min-width: 765px}
+    .pick li:nth-child(3n-2){padding: 135px 5px 10px}
+    .pick li:nth-child(3n-1){padding: 6px 5px 160px}
+    .pick li:nth-child(3n){padding: 85px 5px 80px}
+}
+
+@media screen and (min-width:635px) and (max-width:764px){
+     /*visual - S*/
+    #visual{min-width: 635px; height: 500px}
+    .images .img{min-width:635px; height: 500px;
+        background-size: cover;
+        background-position: -100px center
+
+    }
+
+    .image1{
+    }
+    .image1 p{width: 80px; margin-left: -40px;
+        background: url(../img/main-txt4.png);
+        left: 50%; top: 0px
+    }
+    .image1 a{width: 100%; height: 581px;display: block
+    }
+    
+    .image2 p{width: 200px;height: 150px; margin: -75px 0 0 -100px;
+        left: 50%;top: 50%
+    }
+    .image2 a{margin-left: -60px;
+        position: absolute; left: 50%; bottom: 100px
+    }
+    
+    .image3{}
+    .image3 p{width: 200px;
+        left: 30px; top: 150px
+    }
+    .image3 a{width: 200px;
+        left: 30px;top: 300px
+    }
+
+    .image4{}
+    .image4 p{width: 120px;margin: 0 0 0 -60px;
+        left: 50%; top: 0
+    }
+    .image4 a{margin-left: -60px;
+        left: 50%; bottom: 80px;
+    }
+    
+    
+    .v-inde{bottom: 20px;}
+    .v-btn{display: none;}
+
+    /*main S*/
+    .txt h1{font-size: 16px}
+    .txt p{font-size: 12px}
+    /*첫번째 섹션*/
+    .product{width: 100%;min-width: 635px;height: 900px}
+    .product>article{width: 100%;min-width: 635px;height: 450px}
+    .pro-wrap .pro-img{width: 200px;height: 200px; margin: 0 auto 20px}
+    .product h1{font-size: 16px; line-height: 16px}
+    .product p{font-size: 12px; line-height: 20px}
+    .everyday{padding: 14% 5%}
+    .everyday div{width: 100%; height: 100%; margin: 0 auto; padding: 10% 0}
+    .everyday h1{margin-bottom: 20px;}
+    .everyday p{margin-bottom: 30px;}
+    
+    /*두번째 섹션*/
+    .promotion{height: 600px; padding: 0;}
+    .promotion>article{width: 100%; min-width: 635px; height: 300px;float: none; margin: 0 auto; padding-top: 80px;}
+    .promotion .txt{width: 40%; padding:0}
+    .promotion img{padding: 20px}
+    .thisweek{position: relative}
+    .thisweek:after{display: none}
+    
+    /*세번째 섹션*/
+    .story{height: 900px}
+    .story>article{width: 100%; min-width: 635px;height: 450px; float: none}
+    .story .txt{padding: 15% 0}
+    .story .txt h1{font-size: 16px}
+    .story .txt p{font-size: 12px; line-height: 22px}
+    
+    /*네번째 섹션*/
+    .pick{width: 100%;min-width: 635px}
+    .pick li{width: 50%; height: 520px;}
+    .pick li:nth-child(3n-2){padding: 0}
+    .pick li:nth-child(3n-1){padding: 0}
+    .pick li:nth-child(3n){padding: 0}
+    
+    .pick li:nth-child(2n-1){padding: 60px 10px 0}
+    .pick li:nth-child(2n){padding: 0 10px 60px}
+    
+    
+}
+
+@media screen and (min-width:300px) and (max-width:634px){
+    /*visual - S*/
+    #visual{min-width:300px; height: 500px}
+    .images .img{min-width:300px; height: 500px;
+        background-size: cover;
+        background-position: -250px center
+    }
+    .image1{}
+    .image1 p{width: 80px; margin-left: -40px;
+        top: 0px
+    }
+    .image1 a{width: 100%; height: 581px;display: block
+    }
+    
+    .image2 p{width: 200px;height: 150px; margin: -75px 0 0 -100px;
+        left: 50%;top: 50%
+    }
+    .image2 a{margin-left: -60px;
+        position: absolute; left: 50%; bottom: 100px
+    }
+    
+    .image3{}
+    .image3 p{width: 200px;
+        left: 30px; top: 150px
+    }
+    .image3 a{width: 200px;
+        left: 30px;top: 300px
+    }
+
+    .image4{}
+    .image4 p{width: 100px;margin: 0 0 0 -60px;
+        left: 50%; top: 30px
+    }
+    .image4 a{margin-left: -60px;
+        left: 50%; bottom: 80px;
+    }
+    .v-inde{bottom: 20px;}
+    .v-btn{display: none;}
+
+    /*main S*/
+    .txt h1{font-size: 16px}
+    .txt p{font-size: 12px}
+    /*첫번째 섹션*/
+    .product{width: 100%;min-width:300px;height: 900px}
+    .product>article{width: 100%;min-width:300px;height: 450px}
+    .pro-wrap .pro-img{width: 200px;height: 200px; margin: 0 auto 20px}
+    .product h1{font-size: 16px; line-height: 16px}
+    .product p{font-size: 12px; line-height: 20px}
+    .everyday{padding: 14% 5%}
+    .everyday div{width: 100%; min-width:300px; height: 100%; margin: 0 auto; padding: 10% 0}
+    .everyday h1{margin-bottom: 20px;}
+    .everyday p{margin-bottom: 30px;}
+    
+    /*두번째 섹션*/
+    .promotion{height: 600px; padding: 0;}
+    .promotion>article{width: 100%; min-width:300px; height: 300px;float: none; margin: 0 auto; padding-top: 80px;}
+    .promotion .txt{width: 40%; padding:0}
+    .promotion img{padding: 20px}
+    .thisweek{position: relative}
+    .thisweek:after{display: none}
+    
+    /*세번째 섹션*/
+    .story{height: 900px}
+    .story>article{width: 100%;min-width:300px;height: 450px; float: none}
+    .story .txt{padding: 15% 0}
+    .story .txt h1{font-size: 16px}
+    .story .txt p{font-size: 12px; line-height: 22px}
+    
+    /*네번째 섹션*/
+    .pick{width: 100%; min-width:300px}
+    .pick li{width: 50%; height: 520px;}
+    .pick li:nth-child(3n-2){padding: 0}
+    .pick li:nth-child(3n-1){padding: 0}
+    .pick li:nth-child(3n){padding: 0}
+    
+    .pick li:nth-child(2n-1){padding: 60px 10px 0}
+    .pick li:nth-child(2n){padding: 0 10px 60px}
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+

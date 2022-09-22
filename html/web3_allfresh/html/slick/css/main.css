@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+#visual{}
+
+.btn_next{background-color: aqua}
+
+#visual .slick-dots li button:before {
+    background-color: burlywood
+}
+#visual .slick-dots {bottom: 100px}
+
+
+
+
+
+
+
+

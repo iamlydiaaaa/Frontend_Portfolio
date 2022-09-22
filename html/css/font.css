@@ -1,0 +1,32 @@
+/*
+@font-face{
+    font-family: Movie;
+    src:local(※),
+            url(../font/moviesubtitle.woff) format('woff');
+}
+*/
+@font-face{
+    font-family: Poet;
+    src:local(※),
+            url(../font/poetandme.woff) format('woff');
+}
+/*
+@font-face{
+    font-family: Tree;
+    src:local(※),
+            url(../font/a가로수.woff) format('woff');
+}
+*/
+/*
+@font-face{
+    font-family: Star;
+    src:local(※),
+            url(../font/a별이빛나는밤M.woff) format('woff');
+}
+*/
+
+@font-face{
+    font-family: Novel;
+    src:local(※),
+            url(../font/a추리소설.woff) format('woff');
+}

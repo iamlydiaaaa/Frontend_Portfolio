@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/*visual - s*/
+#visual{width: 100%;min-width: 1200px;height: 420px;
+    position: relative;
+    background: url(../img/sub/sub_visual1.jpg) no-repeat center center
+}
+#visual>div{content:""; width: 100%;min-width: 1200px;height: 420px;
+    position: absolute;left: 0;bottom: 0;
+    background: url(../img/sub/sub_visual_bg.png) no-repeat center center
+}
+#visual>div>div{width: 500px;height: 100px;margin: 180px auto 0;
+    text-align: center;color: #fff
+}
+#visual p:first-child{margin-bottom: 10px;
+    font-size: 46px;font-weight: 700
+}
+#visual p:last-child{opacity: 0.8;
+    font-size: 18px
+}
+/*visual - E*/
+/*main - S*/
+#main{width: 1200px; margin: 0 auto;
+    position: relative
+}
+.lnb{width: 1200px;height: 80px;
+    position: relative;left: 0;top: -70px;
+    font-size: 16px; text-align: center;color: #999; line-height: 80px;
+    background-color: #fff;
+    box-shadow: 0 5px 3px 0 rgb(0,0,0,0.2)
+}
+.lnb li{height: 80px; display: inline-block;
+    position: relative
+}
+.lnb a{padding:28px 40px;
+    line-height: 80px
+}
+.lnb li:after{content: ""; width: 100%;height: 5px;display: block;opacity: 0;
+    position: absolute; left: 0;top: 0;
+    background-color: #aaa;
+    transition: all 0.4s
+}
+.on{color: #555;font-weight: bold}
+.on:before{content: ""; width: 100%;height: 5px;display: block;
+    position: absolute; left: 0;top: 0;
+    background-color: #f39700
+}
+.lnb li:hover:after{opacity: 1}
+.lnb li:hover a{color: #333}
+/*title*/
+.sub-tit{margin: -40px auto 30px;
+    font-size: 48px; line-height: 100px; color: #333; text-align: center;
+}
+/*search box*/
+.schbox{width: 1200px}
+.schbox-inner{height: 95px;margin: 0 auto 50px;
+    background-color: #f1f0f0;
+    border-top: 1px solid #d0121b
+}
+.total{margin:0 100px 0 30px;
+    line-height: 95px
+}
+.total>b{color: #d0121b; font-weight: bold}
+.total:before{content: ""; width: 19px;height: 20px;display: inline-block;margin: -4px 10px;
+    background: url(../img/sub/sub2_icon.png) no-repeat 0 0
+}
+.sch-condition{width: 140px;height: 45px; padding-left: 10px;
+    background-color: #fff; border: none;
+    text-align: center
+}
+#schkeyword{width: 480px;height: 45px; padding: 0 0 0 20px;
+    border:none
+}
+#schbtn{width: 80px;height: 45px;margin-left: 10px;opacity: 0.8;
+    background-color: #c9333b; border: none;
+    color: #fff
+}
+.btn-all{width: 78px;height: 43px;display: block;float: right;margin: 25px 100px 0 0;
+    border: 1px solid #cd5057;
+    line-height: 43px;text-align: center; color: #c9333b;
+    transition: all 0.3s
+}
+.btn-all:hover{background-color: #cd5057;color: #fff}
+#schbtn:hover{opacity: 1}
+/*본문내용*/
+.list>caption{text-indent: -9999px}
+.list>thead{width: 1200px;height: 60px;
+    border-top: 2px solid #d0121b;border-bottom: 1px solid #707070;
+    font-size: 16px; line-height: 60px; font-weight: 600;color:#434342}
+.list>thead th:nth-child(1){width: 100px}
+.list>thead th:nth-child(2){width: 80px}
+.list>thead th:nth-child(3){width: 770px}
+.list>thead th:nth-child(4){width: 150px}
+.list>thead th:nth-child(5){width: 100px}
+/*tbody*/
+.list>tbody{text-align: center;color: #777}
+.list>tbody>tr{height: 60px;
+    border-bottom: 1px solid #ccc;
+    line-height: 60px
+}
+.title{text-align: left; padding-left: 40px}
+.title:hover{color: #333; font-weight: 500}
+/*페이지*/
+.paging{width: 565px;height: 35px;margin: 60px auto}
+.paging>a{width: 33px;height: 33px;display: block;float: left;
+    border: 1px solid #eee; border-radius: 35px;
+    text-align: center; line-height: 33px
+}
+.paging>a + a{margin-left: 3px}
+.inde{text-indent: -9999px}
+.first{background: #ccc url(../img/sub/sub2_btn_inde2.png) no-repeat center center}
+.prev{background: #ddd url(../img/sub/sub2_btn_inde1.png) no-repeat center center}
+.next{background: #ddd url(../img/sub/sub2_btn_inde1.png) no-repeat center center;
+    transform: rotate(180deg)
+}
+.last{background: #ccc url(../img/sub/sub2_btn_inde2.png) no-repeat center center;
+    transform: rotate(180deg)
+}
+.paging>a:hover{background-color: #eee}
